@@ -8,4 +8,10 @@ def show_all(fileName):
     print('')
 
 
+def export_data(fileName):
+    with open(fileName, 'a', encoding = 'utf-8') as data: 
+        noteName = input('Введите название заметки: ')
+        noteText = input('Введите текст: ')
+        data.write(f'{noteName} - {noteText}\n')
+        print(f'Добавлена новая заметка :\n {str.upper(noteName)} \n {noteText}\n')
 

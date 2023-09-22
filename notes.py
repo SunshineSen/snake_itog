@@ -57,7 +57,7 @@ def delete_note(fileName):
 
 def main():
     selection = -1
-    myNotes = 'notes.txt'
+    myNotes = 'notes.csv'
 
     while selection != 0:
         print('Выберите необходимое действие:')
